@@ -1,0 +1,22 @@
+
+<view style="height: 100rpx;"></view>
+<view style="display: flex;flex-direction: row;">
+<van-icon name="arrow-left" size="50rpx" bind:click="jump"/>
+<text style="font-size: 20px;margin-left: 230rpx;">图片展示</text>
+</view>
+
+
+
+
+ <image style="margin-top:100rpx; width:650rpx; height:500rpx; margin-left:50rpx; border-radius: 30px;" mode="widthFix" src="{{tempFilePaths}}"></image>
+ <view style="display: flex; justify-content: center; align-items: center; margin-top: 70rpx; font-size: 40rpx; color:#3D3D3D" >VS</view>
+ <!--<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>-->
+
+ <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}" ></view>
+ <van-progress class="modalDlg" percentage="{{deflautWidth}}" color="#422FCD" wx:if="{{showModal}}"/>
+
+
+ <image  style="margin-top:40rpx; width:650rpx; height:500rpx; margin-left:50rpx; border-radius: 30px;" mode="widthFix" src="/image/fg-120.png" wx:if="{{!showModal}}"></image>
+ <button  style="z-index:-1; float:right; margin-top: 60rpx; margin-bottom:30rpx; margin-right:50rpx; width: 300rpx; height: 105rpx; border-radius: 10px; background-color: #422FCD; color: white; font-size: 20px;" bindtap="aaa">数据分析</button>
+ <button  class="yanse" bindtap="cancel">取消</button>
+

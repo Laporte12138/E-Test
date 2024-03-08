@@ -1,0 +1,10 @@
+
+<view style="display: flex;flex-direction: row;background-color: #f0f0f0;height: 200rpx;">
+  <view style="display: flex;flex-direction: row;margin-top: 60rpx;">
+<van-icon name="arrow-left" size="50rpx" bind:click="cc"/>
+<text style="font-size: 20px;margin-left: 230rpx;margin-top: 45rpx;">生成报告</text>
+</view>
+</view>
+
+<!--请调用您的后端api接口-->
+<view style="margin-top: 60rpx;margin-left: 60rpx;margin-right: 60rpx;">"Write your own api to SQL"</view>

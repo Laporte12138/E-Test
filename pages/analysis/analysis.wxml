@@ -1,0 +1,46 @@
+<view style="height: 100rpx;"></view>
+<van-icon name="arrow-left" size="50rpx" bind:click="cc"/>
+<view style="height: 40rpx;"></view>
+<view style="display: flex; flex-direction: row;margin-left: 160rpx;">
+
+<view wx:if="{{aa==1}}">
+<view style="height: 60rpx;display: flex;flex-direction: row;">
+<button style="height: 70rpx;line-height: 70rpx;color: white;background-color: #422FCD;border-radius: 20px;font-size: 15px;font-weight: 100;width: 200rpx;" bindtap="a1">折线图</button>
+<view style="width: 100rpx;"></view>
+<button style="font-size: 15px;font-weight: 100;height: 60rpx;line-height: 70rpx;color: #767676;border: none;" plain="true" bindtap="a2">拟合图</button>
+</view>
+</view>
+<view wx:else="">
+  <view style="height: 60rpx;display: flex;flex-direction: row;">
+  <button style="font-size: 15px;font-weight: 100;height: 60rpx;line-height: 70rpx;color: #767676;border: none;" plain="true" bindtap="a1">折线图</button>
+  <view style="width: 100rpx;"></view>
+    <button style="height: 70rpx;line-height: 70rpx;color: white;background-color: #422FCD;border-radius: 20px;font-size: 15px;font-weight: 100;width: 200rpx;" bindtap="a2">拟合图</button>
+</view>
+</view>
+</view>
+
+<view wx:if="{{qqq==1}}">
+<image src="../../image/cul-fg-120.png" style="border-radius: 20px;margin-left: 40rpx;width: 670rpx;margin-top: 60rpx;"></image>
+
+<view class='history-table-wrap'>
+  <view class="table">
+      <view class="tr">
+          <view class="th th1">温度/℃</view>
+          <view class="th th2">曲率半径/m</view>
+          <view class="th th3">R^2</view>
+      </view>
+      <view wx:for="{{shujv}}" class="tr" >
+            <view class="{{index==3 ? 'td td11':'td td1'}}">{{item.temperature}}</view>
+          <view class="td td2">{{item.radius}}</view>
+          <view class="{{index==3 ? 'td td33':'td td3'}}">{{item.R}}</view> 
+      </view>
+    </view>
+ </view>
+
+<button style="margin-top: 650rpx;width: 300rpx;height: 105rpx;border-radius: 10px;background-color: #422FCD;color: white;font-size: 20px;" bindtap="aa">生成报告</button>
+</view>
+
+<view wx:else="">
+  <image src="../../image/circle-fg-120.jpg" style="border-radius: 20px;margin-left: 40rpx;width: 670rpx;margin-top: 140rpx;height: 700rpx;"></image>
+  <button style="margin-top: 100rpx;width: 300rpx;height: 105rpx;border-radius: 10px;background-color: #422FCD;color: white;font-size: 20px;" bindtap="aa">生成报告</button>
+</view>

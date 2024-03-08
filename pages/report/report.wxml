@@ -1,0 +1,30 @@
+<view style="height: 100rpx;"></view>
+<view style="display: flex;flex-direction: row;">
+<van-icon name="arrow-left" size="50rpx" bind:click="cc"/>
+<text style="font-size: 20px;margin-left: 230rpx;">生成报告</text>
+</view>
+
+<!--请调用后端数据库以动态展示您的个性化图片，本图片仅为简单展示-->
+<view style="background-color: #7022fd; height: 300rpx;width: 670rpx;margin-left: 40rpx;margin-top: 80rpx;border-radius: 30px;"  bindtap="aa">
+<view style="display: flex;flex-direction: column;">
+<view style="margin-top: 40rpx;font-size: 60rpx;margin-left: 50rpx;color: rgb(226, 226, 226);">专业版</view>
+<view style="margin-left: 50rpx;margin-top: 40rpx;font-size: 30rpx;color: rgb(226, 226, 226);">点击选择金属片图片即可处理</view>
+<image src="../../image/3.png" style="width: 60rpx;height: 60rpx;margin-left: 550rpx;margin-top: 10rpx;"></image>
+</view>
+</view>
+
+<view style="background-color: #6fdb27; height: 300rpx;width: 670rpx;margin-left: 40rpx;margin-top: 80rpx;border-radius: 30px;" bindtap="aa">
+<view style="display: flex;flex-direction: column;">
+<view style="margin-top: 40rpx;font-size: 60rpx;margin-left: 50rpx;color: rgb(226, 226, 226);">学生版</view>
+<view style="margin-left: 50rpx;margin-top: 40rpx;font-size: 30rpx;color: rgb(226, 226, 226);">点击选择金属片图片即可处理</view>
+<image src="../../image/3.png" style="width: 60rpx;height: 60rpx;margin-left: 550rpx;margin-top: 10rpx;"></image>
+</view>
+</view>
+
+<view style="background-color: #f75d6e; height: 300rpx;width: 670rpx;margin-left: 40rpx;margin-top: 80rpx;border-radius: 30px;"  bindtap="aa">
+<view style="display: flex;flex-direction: column;">
+<view style="margin-top: 40rpx;font-size: 60rpx;margin-left: 50rpx;color: rgb(226, 226, 226);">商业版</view>
+<view style="margin-left: 50rpx;margin-top: 40rpx;font-size: 30rpx;color: rgb(226, 226, 226);">点击选择金属片图片即可处理</view>
+<image src="../../image/3.png" style="width: 60rpx;height: 60rpx;margin-left: 550rpx;margin-top: 10rpx;"></image>
+</view>
+</view>

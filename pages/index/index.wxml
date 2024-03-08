@@ -1,0 +1,9 @@
+<view style="display: flex; justify-content: center; align-items: center; margin-top:260rpx; font-size: 38rpx; color:#FFFFFF">原始图</view>
+<view style="background-color: #FFFFFF; height: 900rpx;width: 600rpx;margin-left: 74rpx;margin-top: 150rpx;border-radius: 30px;">
+<view style="display: flex;flex-direction: column;">
+  <van-icon name="plus" size="60px" style="margin-top:385rpx; color:#422FCD; " bindtap="upload"></van-icon>
+<view style="display: flex; justify-content: center; align-items: center; margin-top: 20rpx; font-size: 30rpx; color:#422FCD">点击添加照片</view>
+</view>
+</view>
+
+
